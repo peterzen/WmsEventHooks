@@ -220,6 +220,6 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="lib" path="libs"/>
-	<classpathentry exported="true" kind="lib" path="libs/unirest-java-1.4.6-SNAPSHOT-jar-with-dependencies.jar"/>
+	<classpathentry exported="true" kind="lib" path="libs/unirest-java-1.4.6-SNAPSHOT-jar-with-dependencies.jar" sourcepath="/Volumes/Stuff/Work/Workspace/unirest-java"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

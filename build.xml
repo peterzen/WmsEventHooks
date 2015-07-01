@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<project name="test" default="jar" basedir="..">
+<project name="test" default="jar" basedir=".">
 	
 	<property name="wowza.lib.dir" value="/Library/WowzaStreamingEngine-4.2.0/lib"/>
 	<property name="jar.filename" value="WowzaEventHooks.jar"/>
