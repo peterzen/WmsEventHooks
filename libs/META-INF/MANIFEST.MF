@@ -1,0 +1,6 @@
+Manifest-Version: 1.0
+Ant-Version: Apache Ant 1.9.4
+Created-By: 1.7.0_71-b14 (Oracle Corporation)
+Main-Class: com.prioritylane.wowza.EventHooks
+Class-Path: unirest-java-1.4.6-SNAPSHOT-jar-with-dependencies.jar
+

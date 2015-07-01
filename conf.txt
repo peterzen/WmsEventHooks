@@ -1,0 +1,7 @@
+
+
+<Module>
+   <Name>EventHooks</Name>
+   <Description>Wowza event hooks</Description>
+   <Class>com.prioritylane.wowza.EventHooks</Class>
+</Module>

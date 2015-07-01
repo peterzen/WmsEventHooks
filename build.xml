@@ -1,0 +1,68 @@
+<?xml version="1.0"?>
+<project name="test" default="jar" basedir="..">
+	
+	<property name="wowza.lib.dir" value="/Library/WowzaStreamingEngine-4.2.0/lib"/>
+	<property name="jar.filename" value="WowzaEventHooks.jar"/>
+	<property name="core.build.dir" value="bin"/>
+	<property name="main.class" value="com.prioritylane.wowza.EventHooks"/>
+
+	<target name="jar">
+		<jar jarfile="${wowza.lib.dir}/${jar.filename}">
+			<fileset dir="${core.build.dir}"/>
+			<fileset dir="${core.build.dir}" includes="unirest-java-1.4.6-SNAPSHOT-jar-with-dependencies.jar"/>
+
+			 <manifest>      
+			        <attribute name="Main-Class" value="${main.class}" />    
+			        <attribute name="Class-Path" value="${manifest.classpath}" />
+			 </manifest>
+		</jar>
+	</target>
+	
+</project>
+
+	<!--		
+
+<project name="WowzaEventHooks" default="jar" basedir=".">
+	
+	<property name="wowza.lib.dir" value="/Library/WowzaStreamingEngine-4.2.0/lib"/>
+	<property name="jar.filename" value="WowzaEventHooks.jar"/>
+	<property name="core.build.dir" value="bin"/>
+	<property name="main.class" value="com.prioritylane.wowza.EventHooks"/>
+
+
+	<target name="jar">
+		<jar jarfile="${wowza.lib.dir}/${jar.filename}">
+			<fileset dir="${core.build.dir}" includes="unirest-java-1.4.6-SNAPSHOT-jar-with-dependencies.jar"/>
+
+			<manifestclasspath property="manifest.classpath" jarfile="${jar.filename}">
+			    <classpath location="${wowza.lib.dir}" />
+			</manifestclasspath>
+
+			 <manifest file="${manifest.file}" >      
+			        <attribute name="Main-Class" value="${main.class}" />    
+			        <attribute name="Class-Path" value="${manifest.classpath}" />
+			 </manifest>
+			
+			 <manifest>
+			       <attribute name="Main-Class" value="com.abc.xyz.MyMainClass"/>
+			       <attribute name="Class-Path" value="log4j.jar otherjar.jar"/>
+			    </manifest>
+		</jar>
+	</target>
+	
+	<target name="jar">
+		<jar jarfile="${wowza.lib.dir}/${jar.filename}">
+			<fileset dir="${core.build.dir}"/>
+			<fileset dir="${core.build.dir}" includes="unirest-java-1.4.6-SNAPSHOT-jar-with-dependencies.jar"/>
+
+			 <manifest file="${manifest.file}" >      
+			        <attribute name="Main-Class" value="${main.class}" />    
+			        <attribute name="Class-Path" value="${manifest.classpath}" />
+			 </manifest>
+		</jar>
+	</target>
+	
+	
+</project>
+
+			    -->
